@@ -1,0 +1,30 @@
+* {
+    margin: 0 auto;
+    height: 100%
+}
+div{
+    overflow:hidde;
+}
+body {
+    padding: 0;
+}
+input {
+    padding: 0;
+    border: 0;
+    cursor:pointer;
+    word-break:break-all
+}
+table{
+    text-align:left;
+    padding:0 0
+}
+option{
+    line-height: 10px;
+}
+button{
+    border:none;
+}
+table th{height: 35px;
+    text-align:left} 
+table td{vertical-align:middle;}
+table tr:hover{background-color: burlywood}
