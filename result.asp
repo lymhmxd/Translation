@@ -27,7 +27,7 @@
                     <th style="width:25%">英文</th>
                     <th>翻译值</th>
                 </tr>
-                <%  
+                <% 
                 cnn.Open dbstring
                 sql =  "select id,stdcnname,stdenname,[" & request("code") & "] from StdTranslationCore_Mxd where stdenname like '%" & trim(request("item")) & "%' or stdcnname like '%" & trim(request("item")) & "%'"
                 set rs= Server.CreateObject("ADODB.RecordSet")

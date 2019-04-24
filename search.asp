@@ -2,8 +2,8 @@
     <div id='form' style="display: inline-block; width: 69%">
         <form action="result.asp" method="get" style="vertical-align:middle;">
             <div id="input" style="width: 100%;vertical-align:middle;">
-                <input name="item" type="text" placeholder=" 请输入您要查询的关键字" value='<%response.write request("item")%>'
-                    style="height: 50px; width: 500px;border-bottom:1px solid #ff6a00;cursor:text" />
+                <input id="searchitem" name="item" type="text" placeholder=" 请输入您要查询的关键字" value='<%response.write request("item")%>'
+                    style="height: 50px; width: 500px;border-bottom:1px solid #ff6a00;cursor:text"/>
                 <select name="code" style="height: 50px;width: 100px">
 
                     <% if Request.ServerVariables("URL") ="/result.asp" then
@@ -25,7 +25,7 @@
                 %>
                 </select>
                 <% end if%>
-                <input type="submit" value="Search" style="height: 50px;width:100px;border: 1px solid #ff6a00" />
+                <input type="submit" value="搜索" style="height: 50px;width:100px;border: 1px solid #ff6a00"  onclick="checkvalue()" />
             </div>
         </form>
     </div>
@@ -40,3 +40,4 @@
     </div>
 </div>
 <script type="text/javascript" src="search.js"></script>
+<script type="text/javascript" src="jshouse/search.js"></script>
