@@ -9,7 +9,7 @@ function modifyDb(item) {
     }
     if (item == 2) {
         if (length > 1) {
-            alert("您勾选了多行，无法修改翻译！")
+            alert("您勾选了多行，无法修改翻译啊！")
             return false;
         }
         else {
