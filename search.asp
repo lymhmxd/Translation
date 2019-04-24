@@ -25,7 +25,7 @@
                 %>
                 </select>
                 <% end if%>
-                <input type="submit" value="搜索" style="height: 50px;width:100px;border: 1px solid #ff6a00"  onclick="checkvalue()" />
+                <input type="submit" value="搜索" style="height: 50px;width:100px;border: 1px solid #ff6a00"  onclick="return checkvalue()" />
             </div>
         </form>
     </div>
